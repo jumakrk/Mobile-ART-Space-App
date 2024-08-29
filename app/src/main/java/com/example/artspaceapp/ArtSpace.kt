@@ -63,7 +63,7 @@ fun ArtSpaceContent(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.weight(1f))
 
-        // Buttons for Next and Previous
+        // Buttons
         Row(
             modifier = Modifier
                 .fillMaxWidth()
