@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -22,7 +21,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier
                     .fillMaxSize()
                 ) { innerPadding ->
-                    ArtSpaceContent( // Replace Greeting with your composable function from ArtSpace.kt
+                    ArtSpaceContent(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -35,6 +34,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun ArtSpacePreview() {
     ArtSpaceAppTheme {
-        ArtSpaceContent() // Preview your ArtSpace content
+        ArtSpaceContent()
     }
 }

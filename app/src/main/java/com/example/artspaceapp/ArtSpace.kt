@@ -10,7 +10,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Alignment
 
-// Data class to hold image details
+// Class to hold image details
 class ArtPiece(
     val imageRes: Int,
     val title: String,
@@ -20,7 +20,6 @@ class ArtPiece(
 
 @Composable
 fun ArtSpaceContent(modifier: Modifier = Modifier) {
-    // List of images and their details
     val artPieces = listOf(
         ArtPiece(R.drawable.lion, "Lion", "Juma Kariuki", "Published on 10/10/2023"),
         ArtPiece(R.drawable.leopard, "Leopard", "Owoko Moses", "Published on 3/12/2023"),
@@ -29,7 +28,7 @@ fun ArtSpaceContent(modifier: Modifier = Modifier) {
         ArtPiece(R.drawable.buffalo, "Buffalo", "Mike Daniel", "Published on 08/03/2024")
     )
 
-    var currentIndex by remember { mutableIntStateOf(0) } // Track current image index
+    var currentIndex by remember { mutableIntStateOf(0) }
 
     Column(
         modifier = modifier
