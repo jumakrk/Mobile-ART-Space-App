@@ -22,7 +22,7 @@ class ArtPiece(
 fun ArtSpaceContent(modifier: Modifier = Modifier) {
     val artPieces = listOf(
         ArtPiece(R.drawable.lion, "Lion", "Juma Kariuki", "Published on 10/10/2023"),
-        ArtPiece(R.drawable.leopard, "Leopard", "Owoko Moses", "Published on 3/12/2023"),
+        ArtPiece(R.drawable.leopard, "Leopard", "James Doe", "Published on 3/12/2023"),
         ArtPiece(R.drawable.rhino, "Rhino", "John Doe", "Published on 01/05/2024"),
         ArtPiece(R.drawable.elephant, "Elephant", "Mary Doe", "Published on 05/07/2024"),
         ArtPiece(R.drawable.buffalo, "Buffalo", "Mike Daniel", "Published on 08/03/2024")
